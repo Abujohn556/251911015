@@ -2,16 +2,14 @@
 using namespace std;
 
 int main() {
-    int number;
+    double celsius, fahrenheit;
 
-    cout << "Enter a number: ";
-    cin >> number;
+    cout << "Enter temperature in Celsius: ";
+    cin >> celsius;
 
-    if (number % 2 == 0) {
-        cout << number << " is an Even number." << endl;
-    } else {
-        cout << number << " is an Odd number." << endl;
-    }
+    fahrenheit = (celsius * 9.0 / 5.0) + 32;
+
+    cout << "Temperature in Fahrenheit: " << fahrenheit << endl;
 
     return 0;
 }
